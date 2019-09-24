@@ -1,0 +1,33 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+## core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.lb
+*.snm
+*.nav
+
+
+# other latex files
+*.bbl
+*.blg
+*.gz
+
+# _cache and _files directories obtained by knitting
+*_cache/
+*_files/
+
+# raw directory where original presentation file is stored
+raw/

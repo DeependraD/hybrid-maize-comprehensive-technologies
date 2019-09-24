@@ -1,0 +1,284 @@
+---
+title: "Hybrid maize comprehensive technologies"
+author: |
+  | \textit{ddhakal.rookie@gmail.com}
+  | \url{https://rookie.rbind.io}
+date: Academic year 2019-2020
+output: 
+  binb::monash:
+    toc: true
+    keep_tex: true
+    slide_level: 2
+    includes:
+      in_header: beamer_header_template.tex
+colortheme: monashwhite
+outertheme: smoothtree
+innertheme: rounded
+innercolortheme: rose
+outercolortheme: whale
+linkcolor: red
+urlcolor: lightgrayd
+# titlefontsize: 22pt # breaks custom \lineskip
+fontsize: 11pt
+classoption: "aspectratio=169" # "compressed"
+bibliography: [./bibliographies.bib]
+header-includes: 
+  - \AtBeginSubsection{}
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+require(tidyverse)
+set.seed(453)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, echo = FALSE, 
+                  message = FALSE, warning = FALSE,
+                  out.width = "45%", cache = TRUE,
+                  eval = TRUE, fig.pos = "H",
+                  dev.args=list(bg=grey(0.9), pointsize=11))
+options(knitr.table.format = "latex")
+options(knitr.kable.NA = "", digits = 2)
+options(kableExtra.latex.load_packages = FALSE)
+theme_set(theme_bw())
+```
+
+# Maize genetics and breeding
+
+## Basic situation of maize breeding
+
+- Only 7 hybrids released so far in Nepal
+- National Seed Vision envisions national production scenario strengthened through hybrid development (9+5)
+
+## Main problems of maize breeding
+
+- White colored national hybrids lacking
+- Proper database of inbred lines their characterization lacking
+- Research in heterotic pattern un-sytematized regarding hybrid variety development
+- Competitive hybrid maize seed production technology lacking
+
+## General objectives of maize breeding
+
+- High yield and good quality
+- Stable yield
+- Proper growth duration
+- Easing mechanization
+- Various Stresses tolerant varieties development
+
+## Inheritance of traits in Maize
+
+- Qualitative traits:
+  - grain type and color, endosperm quality, silk color, ligule, and  resistance to some diseases
+- Quantitative traits:
+  - yield, growth duration, and ear length, 1000-grains-weight, plant type
+
+## Hybridization techniques in Maize
+
+- Materials
+- Procedures in pollination
+- Techniques of hybridization
+- Use of MS lines
+- Manual pollination
+
+## Future Direction of Maize Breeding Program
+
+- Heterotic group patterning
+- Acquisition of high yielding Inbred lines.
+- Fostering collaboration of National Research Program and seed production as well as commercial sectors (Public and Private sectors)
+
+# Maize cultivation technology
+
+## Open field and direct seedling cultivation
+
+- Seedling period: Spring, Summer and Autumn
+- Seedling at proper time, reasonable close planting, planting methods (equal width between lines, single plant in one cavity, equal width between lines, double plants in each cavity, wide-narrow lines with single plant, strip intercropping), seeding quantity and depth, seeding quantity and depth
+- Field Management: Thinning, filling the gaps with seedlings and final singling, intertill, weeding and to earth up, fertilization (Stem-oriented fertilization, Ear-oriented fertilization, Grain-oriented fertilization), irrigation and drainage, removing tillerings, artificial supplementary pollination, prevention and treatment of diseases and insect pests, harvesting and storage,
+
+## Precocious high-yield maize with plastic film mulching
+
+- The cultivation technology of precocious high-yield maize with plastic film mulching.
+- Selecting maize variety suitable for plastic film mulching
+- Early planting within proper range
+- Mulching
+- Free the seedlings
+- Field management
+
+# Machinery in China
+
+##
+
+```{r corn-field-management-machinery, fig.cap="Gallery of images showing machineries and implements for crop and harvest management of Corn", fig.subcap=c("Stubble cleaner", "Small scale maize sower", "Maize sower operating on field", "Mulch applicator"), fig.keep='all', out.width='.25\\linewidth', cache=TRUE, eval=TRUE, echo=FALSE, fig.ncol = 4, fig.show="hold", warning=FALSE, message=FALSE}
+knitr::include_graphics(c("./images/stubble_cleaner.jpg",
+                        "./images/small_scale_maize_sower.jpg",
+                        "./images/maize_sower.jpg",
+                        "./images/mulch_applicator.jpg"))
+```
+
+##
+
+```{r corn-field-management-machinery2, fig.cap="Gallery of images showing machineries and implements for crop and harvest management of Corn", fig.subcap=c("Maize drier bin", "Small scale maize kernel drier", "Direct maize sower"), fig.keep='all', out.width='.25\\linewidth', cache=TRUE, eval=TRUE, echo=FALSE, fig.ncol = 3, fig.show="hold", warning=FALSE, message=FALSE}
+knitr::include_graphics(c("./images/maize_drier_bin.jpg",
+                        "./images/small_scale_drier.jpg",
+                        "./images/direct_maize_sower.jpg"))
+```
+
+
+# Corn processing
+
+## Upstream products
+
+- Corn Kernel
+  - Corn starch
+  - Corn gluten
+  - Corn germ cake
+  - Corn fiber
+  - Corn steep liquor
+
+## Downstream products
+
+- Corn Kernel
+  - Corn Starch
+  - Amino Acids
+  - Corn Sweeteners
+  - Modified Starches
+  - Chemicals
+
+## Machinery
+
+```{r corn-processing-machinery, fig.cap="Machinery and equipments for corn processing", fig.subcap=c("Heap of corn", "Fiber separator", "Starch slurry extractor"), fig.keep='all', out.width='.25\\linewidth', cache=TRUE, eval=TRUE, echo=FALSE, fig.ncol = 3, fig.show="hold", warning=FALSE, message=FALSE}
+knitr::include_graphics(c("./images/mountain_of_corn.jpg",
+                        "./images/fiber_separator.jpg",
+                        "./images/starch_slurry_extraction.jpg"))
+```
+
+##
+
+```{r corn-processing-machinery2, fig.cap="Machinery and equipments for corn processing", fig.subcap=c("Machine for second grinding", "Protein separation machine", "Corn cleaning and dehydration facility"), fig.keep='all', out.width='.25\\linewidth', cache=TRUE, eval=TRUE, echo=FALSE, fig.ncol = 3, fig.show="hold", warning=FALSE, message=FALSE}
+knitr::include_graphics(c("./images/machine_for_second_grinding.jpg",
+                        "./images/protein_separation_machine.jpg",
+                        "./images/corn_cleaning_dehydration_facility.jpg"))
+```
+
+# Environmental factors affecting maize
+
+##
+
+- Climatic and geographical factors
+  - Water
+  - Geology
+  - Temperature: Maximum, Minimum
+  - Solar radiation: Solar intensity, Sunshine hours
+- Soil factors
+  - Nutrient content
+  - Soil profile
+- Biotic factors
+  - Diseases
+  - Pests
+  - Weeds
+
+## Ecological factors
+
+- Topography and geomorphology
+  - shall be  good for isolation, water irrigation & drainage, and with enough sunlight exposure, conducive to prevention of wind and frost, and to soil fixation.
+- Soil texture
+  - Soil Type: sand, loam, clay-loam and clay, crumb structure, permeability  
+  - Nutrient Structure
+  - Form of Nitrogen: the content and the existence of Protein, amino acids, humus, amide, or inorganic nitrogen like $NO_3$ - and $NO_2$ - and $NH_4^+$ microbs, etc.
+- Areas (1) with the occurence of serious pests (diseases and insects) or (2) with the high frequency of pests (diseases and insects) occurence or (3) with the occurency of pests (diseases and insects) which are regarded as quarantine objects shall not be used as the bases for seed production.
+
+## Production level and seed growers' skills
+
+- Parental seed production base should be located in the areas with quite good agricultural production conditions and relatively high production level or the areas with crop production as the backbone of their economy.
+- Seed growers should have sound educational background, shall quickly accept new technologies of agricultural production, be ardent in absorbing new science and technologies and related seed know, be active in probing the agronomic technologies related to seed production, love the seed industry.
+
+## Disease
+
+- Turcicum Leaf Blight, 
+- Southern Leaf Blight,
+- Banded Leaf and Sheath Blight (BLSB)
+- Downy Mildew
+- Stalk rot
+- Penicilium ear rot
+- Diplodia Ear rot
+- Gray Speck disease
+- Rust disease
+- Scab in ear
+- Dwarf mosaic
+- Head smut
+
+## Insect pests
+
+- Thrips
+- White Grub
+- Armyworm
+- Corn Earworm
+- Pollen Beetle
+- Cutworm
+- Mole cricket
+- European corn borer
+- Aphids
+
+# Seed certification
+
+## Criteria
+
+- DUS test
+  - with the distinguished characteristics of the typical traits are true of (consistent with) the typical traits of the parents of the breeder seeds, with uniform growth, high purity and high stability.
+- Economic characters of the original level
+- Characters good enough for seeding:
+  - complete maturity,  
+  - high germination rate, 
+  - no disease, 
+  - no mildew, 
+  - no pests of quarantine objects
+  
+## Seed multiplication procedures are established according to the degree of mixture (hybridization)
+
+- The "two-nursery system" and the inbred line mixed multiplication with strict isolation are adopted in the production of parental seeds.
+- Direct multiplication from breeder seeds 
+- Two-nursery system (when mixture degree is low)
+  - selection of individual plant & selfing, 
+  - ear to row comparison,
+  - selection, 
+  - bulk harvest
+  
+# Note
+
+## Field visits and excursions
+
+\backgroundsetup{contents=Confidential,color=blue}
+
+- NMRP: Crossing Block, Inbred Line Multiplication Plot
+- Seed Processing Unit of Lumbini Seed Company, Bhairahawa
+- Maize Superzone, Dang: Hybrid Maize Production Plot
+- Seed Producing Farmer's Group, Syangja: Seed Production of OPVs (Manakamana 3)
+- Ministry of Agriculture, Province 4
+- Lumle Regional Agriculture Research Station
+- Maize Demonstration Plot at Godawari: Waxy corn 
+- NARC, Khumaltar: Agri-Botany Division (Field Visit of various Hybrid Maize Trials of ABD)
+
+## 
+
+<!-- Appliying background does not work inside frame, should place the code right after the frame ends and before next frame starts. But as for this template, manually placing the code to the .tex file doesn't work either-->
+<!-- \usebackgroundtemplate{% -->
+<!-- \tikz\node[opacity=0.6] {\includegraphics[height=\paperheight,width=\paperwidth]{./images/rhino_cover.jpg}}} -->
+
+<!-- \pgfdeclareimage[width=\paperwidth,height=\paperheight]{background}{./images/rhino_cover.jpg} -->
+<!-- \usebackgroundtemplate{\tikz\node[opacity=0.6] \pgfuseimage{background}} -->
+
+- This presentation is a group work, prepared by the "Rhino" group with following group members: Pratikshya Sharma, Bishnu Gautam, Damodar Gautam, Deepika Timsina, Sundar Shrestha, Deependra Dhakal, Abishek Shrestha, Anish Dahal, Ramesh Acharya, Maiya Giri, Debu Bhandari
+
+##
+
+```{r team-field-trips, fig.cap="Gallery of images showing team during excursion visit to RARS, Lumle", fig.subcap = c("With RARS, Lumle team", "Maize experiment field with disease screening trial", "Maize experiment field with yield testing"), fig.keep='all', fig.width=4, out.width='.25\\linewidth', cache=TRUE, eval=TRUE, echo=FALSE, fig.ncol = 2, fig.show="hold", warning=FALSE, message=FALSE}
+knitr::include_graphics(c("./images/rars_lumle_team.jpg", 
+                        "./images/maize_experiment_field_lumle.jpg",
+                        "./images/maize_experiment_field_lumle2.jpg"))
+```
+
+# Bibliography
+
+## References
+
+## {.standout}
+
+Thanks for sliding!

@@ -1,0 +1,71 @@
+\usepackage{setspace}
+\usepackage{wasysym}
+% \usepackage{footnote} % don't use this this breaks all
+\usepackage{fontenc}
+\usepackage{fontawesome}
+\usepackage{booktabs,siunitx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{tikz} % required for image opacity change
+\usepackage[absolute,overlay]{textpos} % for text formatting
+\usepackage{chemfig}
+
+\floatplacement{figure}{H}
+
+% Added by CII
+\usepackage[format=hang,labelfont=bf,margin=0.5cm,justification=centering]{caption}
+\captionsetup{font=small,width=0.9\linewidth,labelfont=small,textfont={small,bf}}
+% End of CII addition
+
+\usepackage{subcaption}
+\newcommand{\subfloat}[2][need a sub-caption]{\subcaptionbox{#1}{#2}}
+
+% \captionsetup[sub]{font=footnotesize}
+\captionsetup[subfigure]{font=small,labelfont=small,textfont=small}
+
+% \newcommand*{\AlignChar}[1]{\makebox[1ex][c]{\ensuremath{\scriptstyle#1}}}%
+
+% this font option is amenable for beamer, although these are global settings
+\setbeamerfont{caption}{size=\tiny}
+\setbeamerfont{subcaption}{size=\tiny} % this is doubted if has any effects
+
+\singlespacing
+\definecolor{lightgrayd}{gray}{0.95}
+\definecolor{skyblued}{rgb}{0.65, 0.6, 0.94}
+\definecolor{oranged}{RGB}{245, 145, 200}
+
+% define new column types (say, L, C, and R) that take their width as argument and do the following
+% - Issue \raggedright, \centering, or \raggedleft to achieve the desired horizontal alignment,
+% - Declare \let\newline\\ to allow to use \newline for manual line breaks within a cell (note that \centering & friends change the meaning of \\ -- this is the problem with Jake's solution),
+% - Issue \arraybackslash (i.e., \let\\\tabularnewline) to allow (again) to use \\ for ending rows,
+% - Issue \hspace{0pt} to allow the first word in a cell to be hyphenated.
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Added by CII
+%%% Copied from knitr
+%% maxwidth is the original width if it's less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\usepackage{background}
